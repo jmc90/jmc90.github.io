@@ -9,6 +9,7 @@ body {
   @include background;
   background: $primary-color;
   color: set-text-color($primary-color);
+  letter-spacing: 2px;
   height: 100%;
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -74,12 +75,12 @@ main {
   }
 }
 
+//About Me 
 .about-info {
   display: grid;
   grid-gap: 30px;
   grid-template-areas:
-    "bioimage bio bio"
-    "job1 job2 job3";
+    "bioimage bio bio";
   grid-template-columns: repeat(3, 1fr);
 
   .bio-image {
@@ -94,22 +95,29 @@ main {
     font-size: 1.5rem;
   }
 
-  .job-1 {
-    grid-area: job1;
-  }
+  // .job {
+  //   background: lighten($primary-color, 5);
+  //   padding: 0.5rem;
+  //   border-bottom: $secondary-color 5px solid;
+  // }
+}
 
-  .job-2 {
-    grid-area: job2;
-  }
+.skills {
+  width: 80%;
+  margin: 3rem auto;
+  text-align: center;
 
-  .job-3 {
-    grid-area: job3;
-  }
-
-  .job {
-    background: lighten($primary-color, 5);
+  h3 {
+    font-size: 1.5rem;
     padding: 0.5rem;
-    border-bottom: $secondary-color 5px solid;
+    border-bottom: $secondary-color 3px solid;
+    margin-bottom: 1.5rem;
+  }
+
+  .skill-icons {
+    width: 80%;
+    margin: auto;
+    font-size: 100px;
   }
 }
 
