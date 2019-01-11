@@ -105,20 +105,31 @@ main {
 .skills {
   width: 80%;
   margin: 3rem auto;
-  text-align: center;
-
+  
   h3 {
     font-size: 1.5rem;
     padding: 0.5rem;
     border-bottom: $secondary-color 3px solid;
     margin-bottom: 1.5rem;
+    text-align: center;
   }
 
   .skill-icons {
     width: 80%;
     margin: auto;
     font-size: 100px;
+    text-align: center;
   }
+
+  i {
+    @include easeOut();
+  }
+
+  i:hover {
+    font-size: 125px;
+    @include easeOut();
+  }
+
 }
 
 // Work/Projects
